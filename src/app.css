@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+/* ******  google fonts **** */
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.heading{
+  position: absolute;
+  top: 50px;
+  font-size: 60px;
+  color: black;
+  font-family:"Alfa Slab One", "serif";
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 10%;
+  text-align: center;
+  gap: 10px;
+}
+#input {
+  border-radius: 15px;
+  border: none;
+  height: 30px;
+  width: 40%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn {
+  width: 10%;
+  height: 70%;
+  background-color: red;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  padding-top: -20px;
+}
+.row2 {
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+}
+.city{
+  font-size: 55px;
+  font-weight: 600;
+  /* z-index: -1; */
+}
+
+.image{
+  background-color: transparent;
+  z-index: 1;
+}
+.noDatafiled{
+  width: 30%;
+  text-align: center;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noData{
+  font-size: 25px;
+  font-weight: 600;
+}
+span{
+  font-size: 55px;
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: bold;
+}
+main{
+  position: relative;
+}
+.img{
+  width: 15%;
+  /* height: 100%; */
+  position: absolute;
+  /* margin-top: 10px;   */
+  /* top: 50%;  */
+  transform: translateY(-50%);
+  visibility: hidden;
+  z-index: 1;
+}
+.hideImg{
+  visibility: visible;
+}
+.temp{
+  font-size: 50px;
+  color: white;
+}
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  main {
+      padding: 20px;
+  }
+  .heading{
+    position: absolute;
+    top: 20px;
+    font-size: 40px;
+    color: black;
+    font-family:"Alfa Slab One", "serif";
+  }
+
+  .row, .row2 {
+      width: 90%;
+      flex-direction: column;
+      height: auto;
+  }
+
+  #input {
+      width: 80%;
+      font-size: 18px;
+  }
+
+  .btn {
+      width: 40%;
+      height: 40px;
+      font-size: 18px;
+      padding-top: 0;
+  }
+
+  .city {
+      font-size: 35px;
+  }
+
+  .img {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+  }
+
+  .noDatafiled {
+      width: 80%;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .noData {
+      font-size: 18px;
+  }
+
+  span {
+      font-size: 35px;
+      margin-left: 0;
+  }
+}
